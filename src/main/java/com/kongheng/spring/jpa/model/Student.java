@@ -1,4 +1,4 @@
-package com.kongheng.spring.jpa.Model;
+package com.kongheng.spring.jpa.model;
 
 import static javax.persistence.GenerationType.SEQUENCE;
 
@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
-import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 
 @Entity(name = "Student")
@@ -20,7 +20,7 @@ import lombok.Data;
     }
 )
 @Data
-@AllArgsConstructor
+@Builder
 public class Student {
   @Id
   @SequenceGenerator(
