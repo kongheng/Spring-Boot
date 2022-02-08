@@ -1,8 +1,10 @@
 package com.kongheng.spring.jpa.repository;
 
-import com.kongheng.spring.jpa.model.Student;
+import com.kongheng.spring.jpa.student.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface StudentRepository extends JpaRepository<Student, Long> {
 
 }
